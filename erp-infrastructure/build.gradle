@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':erp-application')
+    implementation project(':erp-common')
+    implementation project(':erp-domain')
+    // Aquí irían dependencias como Spring Data JPA, controladores de BD, etc.
+}

@@ -1,4 +1,4 @@
-package com.udemy.erp_lite.jpa.entities;
+package com.udemy.erp_lite.persistence.jpa.entities;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;

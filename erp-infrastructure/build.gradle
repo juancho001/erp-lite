@@ -24,4 +24,11 @@ dependencies {
 
     // Cache
     api("org.springframework.boot:spring-boot-starter-cache")
+
+    //AWS
+    // Source: https://mvnrepository.com/artifact/software.amazon.awssdk/s3
+    api("software.amazon.awssdk:s3:2.47.5")
+
+    // Validator
+    api("org.springframework.boot:spring-boot-starter-validation")
 }

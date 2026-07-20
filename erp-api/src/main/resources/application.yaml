@@ -16,13 +16,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-    show-sql: ${JPA_SHOW_SQL:true}
+    show-sql: true
     open-in-view: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: ${HIBERNATE_FORMAT_SQL:true}
-        use_sql_comments: ${HIBERNATE_SHOW_COMMENTS:true}
+        format_sql: true
+        use_sql_comments: true
 
   # MongoDB - Spring Boot 4.x
   data:
@@ -46,9 +46,9 @@ spring:
 
   web:
     error:
-      include-message: ${ERROR_INCLUDE_MESSAGE:always}
-      include-binding-errors: ${ERROR_INCLUDE_BINDING:always}
-      include-stacktrace: ${ERROR_INCLUDE_STACKTRACE:always}
+      include-message: always
+      include-binding-errors: always
+      include-stacktrace: always
 
 # Server
 server:
@@ -57,10 +57,10 @@ server:
 # Logging
 logging:
   level:
-    root: ${LOG_LEVEL_ROOT:INFO}
-    com.erp: ${LOG_LEVEL_APP:DEBUG}
-    org.springframework.web: ${LOG_LEVEL_WEB:DEBUG}
-    org.springframework.data: ${LOG_LEVEL_DATA:DEBUG}
-    org.hibernate.SQL: ${LOG_LEVEL_SQL:DEBUG}
-    org.hibernate.type.descriptor.sql.BasicBinder: ${LOG_LEVEL_SQL_PARAMS:TRACE}
-    org.mongodb.driver: ${LOG_LEVEL_MONGO:DEBUG}
+    root: INFO
+    com.erp: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.data: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.mongodb.driver: DEBUG

@@ -1,5 +1,6 @@
 HELP.md
 .gradle
+.idea
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -18,10 +19,21 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+.vscode/*
+!.vscode/extensions.json
+
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.class
+*.env
+node_modules
+dist
+dist-ssr
+*.local
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
@@ -35,3 +47,5 @@ out/
 
 ### VS Code ###
 .vscode/
+target/*
+test/*

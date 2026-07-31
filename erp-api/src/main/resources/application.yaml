@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: erp-lite-api
+
+  # PostgreSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/erp_db
+    username: udemy
+    password: udemy123
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+  # JPA / Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        use_sql_comments: true
+
+  # MongoDB - Spring Boot 4.x
+  data:
+    mongodb:
+      auto-index-creation: true
+
+    # Redis
+    redis:
+      host: localhost
+      port: 6379
+      password: udemy123
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+  mongodb:
+    uri: mongodb://udemy:udemy123@localhost:27017/erp_catalog_db?authSource=admin
+
+  web:
+    error:
+      include-message: always
+      include-binding-errors: always
+      include-stacktrace: always
+
+# Server
+server:
+  port: 9090
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.erp: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.data: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.mongodb.driver: DEBUG

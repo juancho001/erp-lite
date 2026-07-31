@@ -1,0 +1,20 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    //Spring web solo para el modulo de API
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+
+
+    //Dependencias de otros módulos
+    implementation project(':erp-common')
+    implementation project(':erp-domain')
+    implementation project(':erp-application')
+    implementation project(':erp-infrastructure')
+
+    // Lombok
+    //compileOnly 'org.projectlombok:lombok'
+    //annotationProcessor 'org.projectlombok:lombok'
+}

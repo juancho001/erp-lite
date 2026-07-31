@@ -1,0 +1,37 @@
+plugins{
+    id'java-library'
+}
+
+dependencies {
+    // Dependencias de las capa de Infraestructura
+    api project(':erp-common')
+    api project(':erp-domain')
+    api project(':erp-application')
+
+    // Aquí irían dependencias como Spring Data JPA, controladores de BD, etc.
+
+    // PostgreSQL
+    api("org.postgresql:postgresql:42.7.13")
+
+    // Spring Boot JPA
+    api("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    // MongoDB
+    api("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    // Redis
+    api("org.springframework.boot:spring-boot-starter-data-redis")
+
+    // Cache
+    api("org.springframework.boot:spring-boot-starter-cache")
+
+    //AWS
+    // Source: https://mvnrepository.com/artifact/software.amazon.awssdk/s3
+    api("software.amazon.awssdk:s3:2.47.5")
+
+    // Java Validator
+    api("org.springframework.boot:spring-boot-starter-validation")
+
+    // Rest and Web Client
+    api("org.springframework.boot:spring-boot-starter-web")
+}

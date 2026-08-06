@@ -2,7 +2,7 @@ package com.udemy.erp_lite.persistence.rest.adapters;
 
 
 import com.udemy.erp_lite.customer.CustomerInfo;
-import com.udemy.erp_lite.customer.CustomerProviderService;
+import com.udemy.erp_lite.ports.CustomerProviderService;
 import com.udemy.erp_lite.persistence.rest.dto.UserDTO;
 import com.udemy.erp_lite.persistence.rest.models.JsonplaceholderConfigModel;
 import com.udemy.erp_lite.persistence.mappers.CustomerMappers;

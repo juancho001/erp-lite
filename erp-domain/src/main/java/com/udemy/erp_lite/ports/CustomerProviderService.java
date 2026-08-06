@@ -1,4 +1,6 @@
-package com.udemy.erp_lite.customer;
+package com.udemy.erp_lite.ports;
+
+import com.udemy.erp_lite.customer.CustomerInfo;
 
 import java.util.Optional;
 
